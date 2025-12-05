@@ -1,81 +1,30 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>Федоров Алексей Владиславович</title>
+    <meta charset="UTF-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <title>Планировщик привычек</title>
 </head>
+
 <body>
-    <header class="header">
-        <div class="headerTitle">Планировщик привычек</div>         
-    </header>
-    <main class="main">
-        <div class="addGoal">
-            <div class="addGoalTitle">
-                Создать новую привычку
-            </div>
-            <div class="inputNewContainer">
-                <div class="inputNewTitle">
-                    Название:
-                </div>
-                <input class="inputNew" placeholder="Введите название..."/>
-            </div>
-            <button class="createButton">Создать</button>
-            <button class="cancelButton">Отмена</button>
-        </div>
-        <div class="goal">
-            <div class="goalHeader">
-                <div class="goalTitle">
-                    Чтение книг
-                </div>
-                <div class="goalEdit">
-                    Редактировать
-                </div>
-            </div>
-            <table class="goalTable">
-                <tr>
-                    <td>ПН</td>
-                    <td>ВТ</td>
-                    <td>СР</td>
-                    <td>ЧТ</td>
-                    <td>ПТ</td>
-                    <td>СБ</td>
-                    <td>ВС</td>
-                </tr>
-                <tr>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                    <td><input type="checkbox"></td>
-                </tr>
-            </table>
-        </div>
-        <div class="goal">
-            <div class="goalHeader">
-                <div class="goalSave">
-                    Сохранить
-                </div>
-                <div class="goalDelete">
-                    Удалить
-                </div>
-            </div>
-            <div class="inputEditContainer">
-                <div class="inputEditTitle">
-                    Название:
-                </div>
-                <input class="inputEdit" placeholder="Введите название..."/>
-            </div>
-        </div>
-    </main>
+    <div class="body"></div>
+
+    <main class="main"></main>
+
+    <script type="module" src="./src/main.js"></script>
 </body>
 </html>
